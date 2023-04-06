@@ -8,19 +8,24 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/*
+ *1.前端
+ *1.1.用户
+ */
 @RestController
 @RequestMapping("")
 public class UserController {
     @Autowired
     private IUserService iUserService;
-    //注册
-    @PostMapping("")
-    public R register(User user,String rePassword){
-        return new R(iUserService.register(user,rePassword));
-    }
-    //登录
+    //1.1.1.登录
     @PostMapping("")
     public R login(User user){
         return new R(iUserService.login(user));
     }
+    //1.1.2.注册
+    @PostMapping("")
+    public R register(User user,String rePassword){
+        return new R(iUserService.register(user,rePassword));
+    }
+
 }

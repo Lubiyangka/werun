@@ -10,9 +10,8 @@ import java.util.List;
 
 @Mapper
 public interface NoteBookDao extends BaseMapper<NoteBook> {
-//    //用来显示左侧分类
-//    @Select("SELECT note_type FROM note WHERE username = #{username} and note_title is null")
-//    List<String> selectType(@Param("username")String username);
+    //还需要完善
+    int updateNotebookType();
 
-    //还需要写笔记的增删改查
+    List<String> selectAllByNotebookTypeStrings();
 }
