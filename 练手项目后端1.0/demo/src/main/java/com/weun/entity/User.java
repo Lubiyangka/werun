@@ -6,9 +6,8 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-@TableName("")
+@TableName("user")
 public class User implements Serializable {
-    private Integer Id;
     private String userId;
     private String userPassword;
 
