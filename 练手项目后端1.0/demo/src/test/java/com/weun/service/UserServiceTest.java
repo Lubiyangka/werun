@@ -1,7 +1,7 @@
-package com.werun.service;
+package com.weun.service;
 
 
-import com.werun.entity.User;
+import com.weun.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -31,7 +31,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/demo" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -90,7 +89,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testRegister">
+  <component name="RunManager" selected="JUnit.NotebookServiceTest.testModifyStateAll">
     <configuration name="NotebookServiceTest.testGetPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -107,17 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotebookServiceTest.testSelectByTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotebookServiceTest.testModifyStateAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.werun.service.*" />
+          <option name="PATTERN" value="com.weun.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.werun.service.NotebookServiceTest" />
-      <option name="METHOD_NAME" value="testSelectByTitle" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testModifyStateAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NotebookServiceTest.testModifyStateAll" />
         <item itemvalue="JUnit.UserServiceTest.testRegister" />
         <item itemvalue="JUnit.UserServiceTest.testLogin" />
         <item itemvalue="JUnit.NotebookServiceTest.testShowType" />
         <item itemvalue="JUnit.NotebookServiceTest.testGetPage" />
-        <item itemvalue="JUnit.NotebookServiceTest.testSelectByTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -230,6 +229,7 @@
       <workItem from="1680914013946" duration="5088000" />
       <workItem from="1680959671755" duration="57000" />
       <workItem from="1680966486234" duration="81000" />
+      <workItem from="1680968320613" duration="1373000" />
     </task>
     <servers />
   </component>
@@ -247,7 +247,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="origin/1.0X" />
                       </list>
                     </value>
                   </entry>

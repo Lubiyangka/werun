@@ -1,8 +1,8 @@
-package com.werun.controller;
+package com.weun.controller;
 
-import com.werun.entity.NoteBook;
-import com.werun.service.INotebookService;
-import com.werun.util.R;
+import com.weun.entity.NoteBook;
+import com.weun.service.INotebookService;
+import com.weun.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +14,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/notebooks")
-public class NoteController {
+public class NotebookController {
     @Autowired
     private INotebookService iNotebookService;
 
@@ -38,7 +38,7 @@ public class NoteController {
      *1.2.2
      * 新增笔记
      */
-    @PostMapping("save")
+    @PostMapping("/save")
     public R save (NoteBook noteBook){
         return new R(iNotebookService.save(noteBook));
     }
@@ -46,7 +46,7 @@ public class NoteController {
      *1.2.3
      * 删除笔记
      */
-    @DeleteMapping("delete")
+    @DeleteMapping("/delete")
     public R delete(Integer id){
         return new R(iNotebookService.removeById(id));
     }
@@ -54,7 +54,7 @@ public class NoteController {
      *1.2.3.1
      * 批量删除笔记
      */
-    @DeleteMapping("deleteAll")
+    @DeleteMapping("/deleteAll")
     public R deleteAll(List<Integer> id){
         return new R(iNotebookService.removeByIds(id));
     }
@@ -62,15 +62,23 @@ public class NoteController {
      *1.2.4.1
      * 修改笔记状态
      */
-    @PutMapping("modifyState")
+    @PutMapping("/modifyState/1")
     public R modifyState(Integer id,Integer state){
         return new R(iNotebookService.modifyState(id,state));
     }
     /*
      *1.2.4.2
+     * 批量修改笔记状态
+     */
+    @PutMapping("/modifyState/2")
+    public R modifyState(List<Integer> ids,Integer state){
+        return new R(iNotebookService.modifyState(ids,state));
+    }
+    /*
+     *1.2.4.3
      * 修改笔记（修改全部）
      */
-    @PutMapping("modifyAll")
+    @PutMapping("/modifyAll")
     public R modifyAll(Integer id,NoteBook noteBook){
         return new R(iNotebookService.modifyAll(id,noteBook));
     }
@@ -78,7 +86,7 @@ public class NoteController {
      *1.2.5
      * 查看笔记（展示分页）
      */
-    @GetMapping("page")
+    @GetMapping("/page")
     public R getPage(int currentPage, int pageSize){
         return new R(true,iNotebookService.getPage(currentPage,pageSize));
     }
@@ -86,7 +94,7 @@ public class NoteController {
      *1.2.6
      * 模糊查询，依据笔记标题
      */
-    @GetMapping("getNotebookByTitle")
+    @GetMapping("/getNotebookByTitle")
     public R getNotebookByTitle(String notebookTitle){
         return new R(true,iNotebookService.selectByTitle(notebookTitle));
     }

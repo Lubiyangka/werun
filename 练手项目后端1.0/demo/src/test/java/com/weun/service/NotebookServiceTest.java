@@ -1,12 +1,15 @@
-package com.werun.service;
+package com.weun.service;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.werun.entity.NoteBook;
+import com.weun.entity.NoteBook;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootTest
 public class NotebookServiceTest {
@@ -26,6 +29,13 @@ public class NotebookServiceTest {
     @Test
     void testModifyState(){
         iNotebookService.modifyState(1,1);
+    }
+    @Test
+    void testModifyStateAll(){
+        List<Integer> ids=new ArrayList<>();
+        ids.add(1);
+        ids.add(3);
+        iNotebookService.modifyState(ids,0);
     }
     @Test
     void testModifyAll(){

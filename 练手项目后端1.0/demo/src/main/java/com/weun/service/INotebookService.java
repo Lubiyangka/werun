@@ -1,13 +1,14 @@
-package com.werun.service;
+package com.weun.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.werun.entity.NoteBook;
+import com.weun.entity.NoteBook;
 
 import java.util.List;
 
 public interface INotebookService extends IService<NoteBook> {
     Boolean modifyState(Integer id,Integer state);
+    Boolean modifyState(List<Integer> ids,Integer state);
     Boolean modifyAll(Integer id,NoteBook noteBook);
 //    Boolean saveType(String notebookType);
     List<NoteBook> selectByTitle(String notebookTitle);

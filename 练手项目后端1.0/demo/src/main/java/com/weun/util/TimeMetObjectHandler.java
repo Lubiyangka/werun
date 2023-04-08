@@ -1,4 +1,4 @@
-package com.werun.util;
+package com.weun.util;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;

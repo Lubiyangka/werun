@@ -1,7 +1,7 @@
-package com.werun.service;
+package com.weun.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.werun.entity.User;
+import com.weun.entity.User;
 
 public interface IUserService extends IService<User> {
     Boolean register(User user,String rePassword);

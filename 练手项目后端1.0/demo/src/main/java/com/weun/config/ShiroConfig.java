@@ -1,4 +1,4 @@
-package com.werun.config;
+package com.weun.config;
 
 import org.springframework.context.annotation.Configuration;
 

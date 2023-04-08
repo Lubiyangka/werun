@@ -1,13 +1,14 @@
-package com.werun.service.impl;
+package com.weun.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.werun.dao.NoteBookDao;
-import com.werun.entity.NoteBook;
-import com.werun.service.INotebookService;
+import com.weun.dao.NoteBookDao;
+import com.weun.entity.NoteBook;
+import com.weun.service.INotebookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,16 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
         UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
         updateWrapper.eq("id",id).set("notebook_state",state);
         return noteBookDao.update(null,updateWrapper)>0;
+    }
+
+    @Override
+    public Boolean modifyState(List<Integer> ids, Integer state) {
+        for (Integer id:ids) {
+            UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
+            updateWrapper.eq("id",id).set("notebook_state",state);
+            noteBookDao.update(null,updateWrapper);
+        }
+        return true;
     }
 
     @Override

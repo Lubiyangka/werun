@@ -1,8 +1,8 @@
-package com.werun.controller;
+package com.weun.controller;
 
-import com.werun.entity.User;
-import com.werun.service.IUserService;
-import com.werun.util.R;
+import com.weun.entity.User;
+import com.weun.service.IUserService;
+import com.weun.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,12 +18,12 @@ public class UserController {
     @Autowired
     private IUserService iUserService;
     //1.1.1.登录
-    @PostMapping("login")
+    @PostMapping("/login")
     public R login(User user){
         return new R(iUserService.login(user));
     }
     //1.1.2.注册
-    @PostMapping("register")
+    @PostMapping("/register")
     public R register(User user,String rePassword){
         return new R(iUserService.register(user,rePassword));
     }

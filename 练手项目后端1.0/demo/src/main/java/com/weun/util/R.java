@@ -1,4 +1,4 @@
-package com.werun.util;
+package com.weun.util;
 
 import lombok.Data;
 
