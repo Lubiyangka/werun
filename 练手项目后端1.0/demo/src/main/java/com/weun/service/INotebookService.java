@@ -9,7 +9,7 @@ import java.util.List;
 public interface INotebookService extends IService<NoteBook> {
     Boolean modifyState(Integer id,Integer state);
     Boolean modifyAll(Integer id,NoteBook noteBook);
-    Boolean saveType(String notebookType);
+//    Boolean saveType(String notebookType);
     List<NoteBook> selectByTitle(String notebookTitle);
     List<String> showType();
     IPage<NoteBook> getPage(int currentPage,int pageSize);

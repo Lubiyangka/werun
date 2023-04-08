@@ -14,9 +14,9 @@ public class UserServiceTest {
     @Test
     void testRegister(){
         User user=new User();
-        user.setUserId("test123");
-        user.setUserPassword("786756");
-        iUserService.register(user,"786756");
+        user.setUserId("test124");
+        user.setUserPassword("030404");
+        iUserService.register(user,"030404");
     }
     @Test
     void testLogin(){

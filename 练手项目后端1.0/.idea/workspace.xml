@@ -79,6 +79,9 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
     &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
       &quot;directory&quot;,
       &quot;module&quot;,
@@ -86,18 +89,82 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.DemoApplicationTests.contextLoads">
-    <configuration name="DemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserServiceTest.testRegister">
+    <configuration name="NotebookServiceTest.testGetPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weun.*" />
+          <option name="PATTERN" value="com.weun.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.weun" />
-      <option name="MAIN_CLASS_NAME" value="com.weun.DemoApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testGetPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotebookServiceTest.testSelectByTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testSelectByTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotebookServiceTest.testShowType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testShowType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testRegister" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,7 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.UserServiceTest.testRegister" />
+        <item itemvalue="JUnit.UserServiceTest.testLogin" />
+        <item itemvalue="JUnit.NotebookServiceTest.testShowType" />
+        <item itemvalue="JUnit.NotebookServiceTest.testGetPage" />
+        <item itemvalue="JUnit.NotebookServiceTest.testSelectByTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +224,9 @@
       <workItem from="1680699572604" duration="847000" />
       <workItem from="1680791487027" duration="5242000" />
       <workItem from="1680829629113" duration="4686000" />
+      <workItem from="1680844069610" duration="20000" />
+      <workItem from="1680912740614" duration="898000" />
+      <workItem from="1680914013946" duration="5088000" />
     </task>
     <servers />
   </component>

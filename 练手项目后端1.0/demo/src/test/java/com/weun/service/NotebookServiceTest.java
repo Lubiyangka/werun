@@ -12,6 +12,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class NotebookServiceTest {
     @Autowired
     private INotebookService iNotebookService;
+    @Test
+    void testAddNotebook(){
+        NoteBook noteBook=new NoteBook();
+        noteBook.setNotebookType("java");
+        noteBook.setNotebookTitle("Spring Data Jpa");
+        noteBook.setNotebookState(1);
+        noteBook.setNotebookContent("content test 0");
+        noteBook.setNotebookDescription("description test 0");
+        iNotebookService.save(noteBook);
+    }
 
     @Test
     void testModifyState(){
@@ -20,17 +30,17 @@ public class NotebookServiceTest {
     @Test
     void testModifyAll(){
         NoteBook noteBook=new NoteBook();
-        noteBook.setId(1);
+        //noteBook.setId(1);
         noteBook.setNotebookType("java");
-        noteBook.setNotebookTitle("title1");
-        noteBook.setNotebookState(0);
-        noteBook.setNotebookContent("content test");
-        noteBook.setNotebookDescription("description test");
-        iNotebookService.modifyState(1,1);
+        noteBook.setNotebookTitle("Java程序设计");
+        noteBook.setNotebookState(1);
+        noteBook.setNotebookContent("content test changed");
+        noteBook.setNotebookDescription("description test changed");
+        iNotebookService.modifyAll(1,noteBook);
     }
     @Test
     void testSelectByTitle(){
-        iNotebookService.selectByTitle("title1");
+        iNotebookService.selectByTitle("title0");
     }
     @Test
     void testShowType(){

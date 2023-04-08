@@ -13,17 +13,17 @@ import org.springframework.web.bind.annotation.RestController;
  *1.1.用户
  */
 @RestController
-@RequestMapping("")
+@RequestMapping("/users")
 public class UserController {
     @Autowired
     private IUserService iUserService;
     //1.1.1.登录
-    @PostMapping("")
+    @PostMapping("login")
     public R login(User user){
         return new R(iUserService.login(user));
     }
     //1.1.2.注册
-    @PostMapping("")
+    @PostMapping("register")
     public R register(User user,String rePassword){
         return new R(iUserService.register(user,rePassword));
     }

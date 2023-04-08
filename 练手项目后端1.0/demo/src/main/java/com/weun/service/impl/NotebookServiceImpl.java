@@ -1,6 +1,7 @@
 package com.weun.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -22,21 +23,24 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
     @Override
     public Boolean modifyState(Integer id,Integer state) {
         UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
-        updateWrapper.eq("id",id).set("note_state",state);
+        updateWrapper.eq("id",id).set("notebook_state",state);
         return noteBookDao.update(null,updateWrapper)>0;
     }
 
     @Override
     public Boolean modifyAll(Integer id,NoteBook noteBook) {
+//        UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
+//        updateWrapper.eq("id",id).setEntity(noteBook);
         UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
-        updateWrapper.eq("id",id).setEntity(noteBook);
+        updateWrapper.eq("id",id).set("notebook_state",noteBook.getNotebookState()).set("notebook_title",noteBook.getNotebookTitle()).set("notebook_type",noteBook.getNotebookType()).set("notebook_content",noteBook.getNotebookContent()).set("notebook_description",noteBook.getNotebookDescription());
         return noteBookDao.update(null,updateWrapper)>0;
+
     }
-    //还需要完善
-    @Override
-    public Boolean saveType(String notebookType) {
-        return noteBookDao.updateNotebookType()>0;
-    }
+//    //还需要完善
+//    @Override
+//    public Boolean saveType(String notebookType) {
+//        return noteBookDao.updateNotebookType()>0;
+//    }
 
     @Override
     public List<NoteBook> selectByTitle(String notebookTitle) {
