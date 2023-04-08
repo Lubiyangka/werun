@@ -1,8 +1,8 @@
-package com.weun.service;
+package com.werun.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.weun.entity.NoteBook;
+import com.werun.entity.NoteBook;
 
 import java.util.List;
 

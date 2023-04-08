@@ -1,8 +1,8 @@
-package com.weun.controller;
+package com.werun.controller;
 
-import com.weun.entity.NoteBook;
-import com.weun.service.INotebookService;
-import com.weun.util.R;
+import com.werun.entity.NoteBook;
+import com.werun.service.INotebookService;
+import com.werun.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

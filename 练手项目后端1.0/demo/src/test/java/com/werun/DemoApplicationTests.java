@@ -1,6 +1,6 @@
-package com.weun;
+package com.werun;
 
-import com.weun.dao.UserDao;
+import com.werun.dao.UserDao;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

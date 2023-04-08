@@ -1,10 +1,10 @@
-package com.weun.service.impl;
+package com.werun.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.weun.dao.UserDao;
-import com.weun.entity.User;
-import com.weun.service.IUserService;
+import com.werun.dao.UserDao;
+import com.werun.entity.User;
+import com.werun.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

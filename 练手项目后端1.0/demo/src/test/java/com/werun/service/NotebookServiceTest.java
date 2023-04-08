@@ -1,9 +1,9 @@
-package com.weun.service;
+package com.werun.service;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.weun.entity.NoteBook;
+import com.werun.entity.NoteBook;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

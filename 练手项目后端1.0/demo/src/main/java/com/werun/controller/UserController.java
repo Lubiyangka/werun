@@ -1,8 +1,8 @@
-package com.weun.controller;
+package com.werun.controller;
 
-import com.weun.entity.User;
-import com.weun.service.IUserService;
-import com.weun.util.R;
+import com.werun.entity.User;
+import com.werun.service.IUserService;
+import com.werun.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.weun;
+package com.werun;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
