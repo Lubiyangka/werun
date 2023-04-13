@@ -16,10 +16,29 @@ public class NotebookServiceTest {
     @Autowired
     private INotebookService iNotebookService;
     @Test
+    void testSaveNotebookType(){
+        iNotebookService.saveType("Java");
+    }
+    @Test
+    void testShowNotebookType(){
+        iNotebookService.showType();
+    }
+    @Test
+    void testDelete(){
+        iNotebookService.removeById(5);
+    }
+    @Test
+    void testDeleteAll(){
+        List<Integer> ids=new ArrayList<>();
+        ids.add(6);
+        ids.add(7);
+        iNotebookService.removeByIds(ids);
+    }
+    @Test
     void testAddNotebook(){
         NoteBook noteBook=new NoteBook();
-        noteBook.setNotebookType("java");
-        noteBook.setNotebookTitle("Spring Data Jpa");
+        noteBook.setNotebookType("C++");
+        noteBook.setNotebookTitle("C++ prime");
         noteBook.setNotebookState(1);
         noteBook.setNotebookContent("content test 0");
         noteBook.setNotebookDescription("description test 0");
@@ -51,10 +70,6 @@ public class NotebookServiceTest {
     @Test
     void testSelectByTitle(){
         iNotebookService.selectByTitle("title0");
-    }
-    @Test
-    void testShowType(){
-        iNotebookService.showType();
     }
     @Test
     void testGetPage(){

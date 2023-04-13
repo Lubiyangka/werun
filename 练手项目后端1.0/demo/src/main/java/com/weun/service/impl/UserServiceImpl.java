@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.weun.dao.UserDao;
 import com.weun.entity.User;
 import com.weun.service.IUserService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,14 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl extends ServiceImpl<UserDao,User> implements IUserService {
     @Autowired
     private UserDao userDao;
+
+    @Override
+    public User selectByUser(String userId) {
+        QueryWrapper<User> queryWrapper=new QueryWrapper<>();
+        queryWrapper.eq("uesr_id",userId);
+        return userDao.selectOne(queryWrapper);
+    }
+
     @Override
     public Boolean register(User user,String rePassword){
         QueryWrapper<User> wrapper =new QueryWrapper<>();
@@ -43,6 +53,13 @@ public class UserServiceImpl extends ServiceImpl<UserDao,User> implements IUserS
                 throw new RuntimeException("密码错误");
             }
         }
+        return true;
+    }
+
+    @Override
+    public Boolean logout() {
+        Subject subject= SecurityUtils.getSubject();
+        subject.logout();
         return true;
     }
 }

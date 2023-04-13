@@ -29,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/demo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -63,6 +63,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -74,7 +78,7 @@
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;b938686650f0fa0d301ee2255731a31c&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -89,24 +93,8 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.NotebookServiceTest.testModifyStateAll">
-    <configuration name="NotebookServiceTest.testGetPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.werun.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.werun.service.NotebookServiceTest" />
-      <option name="METHOD_NAME" value="testGetPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NotebookServiceTest.testModifyStateAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.NotebookServiceTest.testGetPage">
+    <configuration name="NotebookServiceTest.testAddNotebook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -116,56 +104,79 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.weun.service" />
       <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
-      <option name="METHOD_NAME" value="testModifyStateAll" />
+      <option name="METHOD_NAME" value="testAddNotebook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotebookServiceTest.testShowType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotebookServiceTest.testDeleteAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.werun.service.*" />
+          <option name="PATTERN" value="com.weun.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.werun.service.NotebookServiceTest" />
-      <option name="METHOD_NAME" value="testShowType" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotebookServiceTest.testGetPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.werun.service.*" />
+          <option name="PATTERN" value="com.weun.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.werun.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testGetPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotebookServiceTest.testModifyState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.werun.service.*" />
+          <option name="PATTERN" value="com.weun.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.werun.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testRegister" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testModifyState" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotebookServiceTest.testSelectByTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testSelectByTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.weun.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NotebookServiceTest.testModifyStateAll" />
-        <item itemvalue="JUnit.UserServiceTest.testRegister" />
-        <item itemvalue="JUnit.UserServiceTest.testLogin" />
-        <item itemvalue="JUnit.NotebookServiceTest.testShowType" />
         <item itemvalue="JUnit.NotebookServiceTest.testGetPage" />
+        <item itemvalue="JUnit.NotebookServiceTest.testSelectByTitle" />
+        <item itemvalue="JUnit.NotebookServiceTest.testModifyState" />
+        <item itemvalue="JUnit.NotebookServiceTest.testAddNotebook" />
+        <item itemvalue="JUnit.NotebookServiceTest.testDeleteAll" />
       </list>
     </recent_temporary>
   </component>
@@ -230,6 +241,12 @@
       <workItem from="1680959671755" duration="57000" />
       <workItem from="1680966486234" duration="81000" />
       <workItem from="1680968320613" duration="1541000" />
+      <workItem from="1681273663985" duration="211000" />
+      <workItem from="1681273938015" duration="1780000" />
+      <workItem from="1681294329168" duration="1533000" />
+      <workItem from="1681381328747" duration="7653000" />
+      <workItem from="1681394118821" duration="1481000" />
+      <workItem from="1681395784509" duration="2672000" />
     </task>
     <servers />
   </component>

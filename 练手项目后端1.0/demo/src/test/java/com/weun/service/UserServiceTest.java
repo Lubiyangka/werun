@@ -25,5 +25,10 @@ public class UserServiceTest {
         user.setUserPassword("786756");
         iUserService.login(user);
     }
+    //报错
+    @Test
+    void testLogout(){
+        iUserService.logout();
+    }
 
 }

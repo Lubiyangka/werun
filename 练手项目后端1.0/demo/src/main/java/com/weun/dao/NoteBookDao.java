@@ -10,8 +10,5 @@ import java.util.List;
 
 @Mapper
 public interface NoteBookDao extends BaseMapper<NoteBook> {
-//    //还需要完善
-//    int updateNotebookType();
-    @Select("SELECT notebook_type FROM notebook")
-    List<String> selectAllByNotebookTypeStrings();
+
 }

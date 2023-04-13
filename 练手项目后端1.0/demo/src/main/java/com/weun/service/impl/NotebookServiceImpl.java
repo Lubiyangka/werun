@@ -7,8 +7,13 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.weun.dao.NoteBookDao;
+import com.weun.dao.NotebookTypeDao;
 import com.weun.entity.NoteBook;
+import com.weun.entity.NotebookType;
+import com.weun.entity.User;
 import com.weun.service.INotebookService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +24,9 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
 
     @Autowired
     private NoteBookDao noteBookDao;
+    @Autowired
+    private NotebookTypeDao notebookTypeDao;
+
 
     @Override
     public Boolean modifyState(Integer id,Integer state) {
@@ -46,11 +54,12 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
         return noteBookDao.update(null,updateWrapper)>0;
 
     }
-//    //还需要完善
-//    @Override
-//    public Boolean saveType(String notebookType) {
-//        return noteBookDao.updateNotebookType()>0;
-//    }
+
+    @Override
+    public Boolean saveType(String notebookType) {
+        NotebookType oneType=new NotebookType(notebookType);
+        return notebookTypeDao.insert(oneType)>0;
+    }
 
     @Override
     public List<NoteBook> selectByTitle(String notebookTitle) {
@@ -61,7 +70,7 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
 
     @Override
     public List<String> showType() {
-        return noteBookDao.selectAllByNotebookTypeStrings();
+        return notebookTypeDao.selectAllByNotebookTypeStrings();
     }
 
     @Override

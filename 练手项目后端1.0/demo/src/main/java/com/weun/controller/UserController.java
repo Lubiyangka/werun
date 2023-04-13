@@ -3,10 +3,10 @@ package com.weun.controller;
 import com.weun.entity.User;
 import com.weun.service.IUserService;
 import com.weun.util.R;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /*
  *1.前端
@@ -19,13 +19,26 @@ public class UserController {
     private IUserService iUserService;
     //1.1.1.登录
     @PostMapping("/login")
-    public R login(User user){
+    public R login(@RequestBody User user){
         return new R(iUserService.login(user));
     }
     //1.1.2.注册
     @PostMapping("/register")
-    public R register(User user,String rePassword){
+    public R register(@RequestBody User user,@RequestBody String rePassword){
         return new R(iUserService.register(user,rePassword));
+    }
+
+    //1.1.3.退出登录
+    @PostMapping("/logout")
+    public R logout(){
+        return new R(iUserService.logout());
+    }
+    /*
+     *前端对接
+     */
+    @GetMapping("/toLogin")
+    public String toLogin(){
+        return "";
     }
 
 }
