@@ -29,28 +29,31 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
 
 
     @Override
-    public Boolean modifyState(Integer id,Integer state) {
+    public Boolean modifyState(String notebookTitle,Integer state) {
         UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
-        updateWrapper.eq("id",id).set("notebook_state",state);
+        updateWrapper.eq("notebook_title",notebookTitle).set("notebook_state",state);
         return noteBookDao.update(null,updateWrapper)>0;
     }
 
     @Override
-    public Boolean modifyState(List<Integer> ids, Integer state) {
-        for (Integer id:ids) {
+    public Boolean modifyState(List<String> notebookTitles, Integer state) {
+        for (String notebookTitle:notebookTitles) {
             UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
-            updateWrapper.eq("id",id).set("notebook_state",state);
+            updateWrapper.eq("notebook_title",notebookTitle).set("notebook_state",state);
             noteBookDao.update(null,updateWrapper);
         }
         return true;
     }
 
     @Override
-    public Boolean modifyAll(Integer id,NoteBook noteBook) {
-//        UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
-//        updateWrapper.eq("id",id).setEntity(noteBook);
+    public Boolean modifyAll(String notebook_title,NoteBook noteBook) {
         UpdateWrapper<NoteBook> updateWrapper=new UpdateWrapper<>();
-        updateWrapper.eq("id",id).set("notebook_state",noteBook.getNotebookState()).set("notebook_title",noteBook.getNotebookTitle()).set("notebook_type",noteBook.getNotebookType()).set("notebook_content",noteBook.getNotebookContent()).set("notebook_description",noteBook.getNotebookDescription());
+        updateWrapper.eq("notebook_title",notebook_title)
+                .set("notebook_state",noteBook.getNotebookState())
+                .set("notebook_title",noteBook.getNotebookTitle())
+                .set("notebook_type",noteBook.getNotebookType())
+                .set("notebook_content",noteBook.getNotebookContent())
+                .set("notebook_description",noteBook.getNotebookDescription());
         return noteBookDao.update(null,updateWrapper)>0;
 
     }
@@ -78,5 +81,12 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
         IPage page =new Page(currentPage,pageSize);
         noteBookDao.selectPage(page,null);
         return null;
+    }
+
+    @Override
+    public NoteBook showNotebook(String notebookType) {
+        QueryWrapper<NoteBook> queryWrapper=new QueryWrapper<>();
+        queryWrapper.eq("notebook_title",notebookType);
+        return noteBookDao.selectOne(queryWrapper);
     }
 }

@@ -20,12 +20,12 @@ public class UserController {
     //1.1.1.登录
     @PostMapping("/login")
     public R login(@RequestBody User user){
-        return new R(iUserService.login(user));
+        return iUserService.login(user);
     }
     //1.1.2.注册
     @PostMapping("/register")
     public R register(@RequestBody User user,@RequestBody String rePassword){
-        return new R(iUserService.register(user,rePassword));
+        return iUserService.register(user,rePassword);
     }
 
     //1.1.3.退出登录

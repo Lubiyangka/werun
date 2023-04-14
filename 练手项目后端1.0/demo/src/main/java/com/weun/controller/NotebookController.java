@@ -38,49 +38,49 @@ public class NotebookController {
      *1.2.2
      * 新增笔记
      */
-    @PostMapping("/save")
-    public R save (@RequestBody NoteBook noteBook){
+    @PostMapping("/saveNotebook")
+    public R saveNotebook (@RequestBody NoteBook noteBook){
         return new R(iNotebookService.save(noteBook));
     }
     /*
      *1.2.3
      * 删除笔记
      */
-    @DeleteMapping("/delete/{id}")
-    public R delete(@PathVariable Integer id){
-        return new R(iNotebookService.removeById(id));
+    @DeleteMapping("/delete/{notebookTitle}")
+    public R delete(@PathVariable String notebookTitle){
+        return new R(iNotebookService.removeById(notebookTitle));
     }
     /*
      *1.2.3.1
      * 批量删除笔记
      */
     @DeleteMapping("/deleteAll")
-    public R deleteAll(@RequestParam(value = "id") List<Integer> id){
-        return new R(iNotebookService.removeByIds(id));
+    public R deleteAll(@RequestParam(value = "notebookTitle") List<String> notebookTitle){
+        return new R(iNotebookService.removeByIds(notebookTitle));
     }
     /*
      *1.2.4.1
      * 修改笔记状态
      */
-    @PutMapping("/modifyState/{id}/{state}")
-    public R modifyState(@PathVariable Integer id,@PathVariable Integer state){
-        return new R(iNotebookService.modifyState(id,state));
+    @PutMapping("/modifyState/{notebookTitle}/{state}")
+    public R modifyState(@PathVariable String notebookTitle,@PathVariable Integer state){
+        return new R(iNotebookService.modifyState(notebookTitle,state));
     }
     /*
      *1.2.4.2
      * 批量修改笔记状态
      */
     @PutMapping("/modifyState/{state}")
-    public R modifyState(@RequestParam(value = "id") List<Integer> id,@PathVariable Integer state){
-        return new R(iNotebookService.modifyState(id,state));
+    public R modifyState(@RequestParam(value = "id") List<String> notebookTitle,@PathVariable Integer state){
+        return new R(iNotebookService.modifyState(notebookTitle,state));
     }
     /*
      *1.2.4.3
      * 修改笔记（修改全部）
      */
-    @PutMapping("/modifyAll/{id}")
-    public R modifyAll(@PathVariable Integer id,@RequestBody NoteBook noteBook){
-        return new R(iNotebookService.modifyAll(id,noteBook));
+    @PutMapping("/modifyAll/{notebookTitle}")
+    public R modifyAll(@PathVariable String notebookTitle,@RequestBody NoteBook noteBook){
+        return new R(iNotebookService.modifyAll(notebookTitle,noteBook));
     }
     /*
      *1.2.5
@@ -97,6 +97,14 @@ public class NotebookController {
     @GetMapping("/getNotebookByTitle/{notebookTitle}")
     public R getNotebookByTitle(@PathVariable String notebookTitle){
         return new R(true,iNotebookService.selectByTitle(notebookTitle));
+    }
+    /*
+     *1.2.6
+     * 修改笔记，返回笔记内容
+     */
+    @GetMapping("/getNotebook/{notebookTitle}")
+    public R getNotebook(@PathVariable String notebookTitle){
+        return new R(true,iNotebookService.showNotebook(notebookTitle));
     }
 
 }

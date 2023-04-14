@@ -17,44 +17,45 @@ public class NotebookServiceTest {
     private INotebookService iNotebookService;
     @Test
     void testSaveNotebookType(){
-        iNotebookService.saveType("Java");
+        iNotebookService.saveType("C");
     }
     @Test
     void testShowNotebookType(){
         iNotebookService.showType();
     }
     @Test
-    void testDelete(){
-        iNotebookService.removeById(5);
-    }
-    @Test
-    void testDeleteAll(){
-        List<Integer> ids=new ArrayList<>();
-        ids.add(6);
-        ids.add(7);
-        iNotebookService.removeByIds(ids);
-    }
-    @Test
-    void testAddNotebook(){
+    void testSaveNotebook(){
         NoteBook noteBook=new NoteBook();
-        noteBook.setNotebookType("C++");
-        noteBook.setNotebookTitle("C++ prime");
+        noteBook.setNotebookType("C");
+        noteBook.setNotebookTitle("C prime plus");
         noteBook.setNotebookState(1);
         noteBook.setNotebookContent("content test 0");
         noteBook.setNotebookDescription("description test 0");
         iNotebookService.save(noteBook);
     }
+    @Test
+    void testDelete(){
+        iNotebookService.removeById("C prime plus");
+    }
+    @Test
+    void testDeleteAll(){
+        List<String> notebookType=new ArrayList<>();
+        notebookType.add("C prime plus");
+        notebookType.add("C++ prime");
+        iNotebookService.removeByIds(notebookType);
+    }
+
 
     @Test
     void testModifyState(){
-        iNotebookService.modifyState(1,1);
+        iNotebookService.modifyState("Java程序设计",0);
     }
     @Test
     void testModifyStateAll(){
-        List<Integer> ids=new ArrayList<>();
-        ids.add(1);
-        ids.add(3);
-        iNotebookService.modifyState(ids,0);
+        List<String> notebookTitle=new ArrayList<>();
+        notebookTitle.add("Java程序设计");
+        notebookTitle.add("title0");
+        iNotebookService.modifyState(notebookTitle,0);
     }
     @Test
     void testModifyAll(){
@@ -65,12 +66,9 @@ public class NotebookServiceTest {
         noteBook.setNotebookState(1);
         noteBook.setNotebookContent("content test changed");
         noteBook.setNotebookDescription("description test changed");
-        iNotebookService.modifyAll(1,noteBook);
+        iNotebookService.modifyAll("Java程序设计",noteBook);
     }
-    @Test
-    void testSelectByTitle(){
-        iNotebookService.selectByTitle("title0");
-    }
+
     @Test
     void testGetPage(){
         IPage<NoteBook> noteBookIpage=new Page<NoteBook>(1,5);
@@ -80,5 +78,13 @@ public class NotebookServiceTest {
         System.out.println (noteBookIpage.getTotal());
         System.out.println (noteBookIpage.getPages());
         System.out.println (noteBookIpage.getRecords());
+    }
+    @Test
+    void testSelectByTitle(){
+        iNotebookService.selectByTitle("title0");
+    }
+    @Test
+    void testShowNotebook(){
+        iNotebookService.showNotebook("Java程序设计");
     }
 }

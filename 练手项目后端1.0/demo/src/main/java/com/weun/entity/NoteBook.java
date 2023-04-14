@@ -14,7 +14,8 @@ import java.util.Date;
 @NoArgsConstructor
 @TableName("notebook")
 public class NoteBook implements Serializable {
-    private Integer id;
+//    private Integer id;
+    @TableId
     private String notebookTitle;
     private String notebookType;
     private Integer notebookState;
@@ -25,7 +26,7 @@ public class NoteBook implements Serializable {
 
     public NoteBook(NoteBook noteBook) {
         if(noteBook !=null ){
-            this.id =noteBook.getId();
+//            this.id =noteBook.getId();
             this.notebookTitle =noteBook.getNotebookTitle();
             this.notebookType = noteBook.getNotebookType();
             this.notebookState = noteBook.getNotebookState();
