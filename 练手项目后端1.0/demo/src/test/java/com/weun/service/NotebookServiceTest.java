@@ -17,11 +17,11 @@ public class NotebookServiceTest {
     private INotebookService iNotebookService;
     @Test
     void testSaveNotebookType(){
-        iNotebookService.saveType("C");
+//        iNotebookService.saveType("C","HLQ");
     }
     @Test
     void testShowNotebookType(){
-        iNotebookService.showType();
+        iNotebookService.showType("HLQ");
     }
     @Test
     void testSaveNotebook(){
@@ -48,14 +48,14 @@ public class NotebookServiceTest {
 
     @Test
     void testModifyState(){
-        iNotebookService.modifyState("Java程序设计",0);
+        iNotebookService.modifyState("Java程序设计",0,"HLQ");
     }
     @Test
     void testModifyStateAll(){
         List<String> notebookTitle=new ArrayList<>();
         notebookTitle.add("Java程序设计");
         notebookTitle.add("title0");
-        iNotebookService.modifyState(notebookTitle,0);
+        iNotebookService.modifyState(notebookTitle,0,"HLQ");
     }
     @Test
     void testModifyAll(){
@@ -66,7 +66,7 @@ public class NotebookServiceTest {
         noteBook.setNotebookState(1);
         noteBook.setNotebookContent("content test changed");
         noteBook.setNotebookDescription("description test changed");
-        iNotebookService.modifyAll("Java程序设计",noteBook);
+        iNotebookService.modifyAll("Java程序设计",noteBook,"HLQ");
     }
 
     @Test
@@ -81,10 +81,10 @@ public class NotebookServiceTest {
     }
     @Test
     void testSelectByTitle(){
-        iNotebookService.selectByTitle("title0");
+        iNotebookService.selectByTitle("title0","HLQ");
     }
     @Test
     void testShowNotebook(){
-        iNotebookService.showNotebook("Java程序设计");
+        iNotebookService.showNotebook("Java程序设计","HLQ");
     }
 }

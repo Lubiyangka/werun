@@ -9,6 +9,6 @@ import java.util.List;
 
 @Mapper
 public interface NotebookTypeDao extends BaseMapper<NotebookType> {
-    @Select("SELECT notebook_type FROM notebook_type")
-    List<String> selectAllByNotebookTypeStrings();
+    @Select("SELECT notebook_type FROM notebook_type WHERE username = #{username}")
+    List<String> selectAllByNotebookTypeStrings(String username);
 }

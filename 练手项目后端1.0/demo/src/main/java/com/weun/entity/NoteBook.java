@@ -23,6 +23,7 @@ public class NoteBook implements Serializable {
     private Date notebookCreatedTime;
     private String notebookContent;
     private String notebookDescription;
+    private String username;
 
     public NoteBook(NoteBook noteBook) {
         if(noteBook !=null ){
@@ -33,6 +34,7 @@ public class NoteBook implements Serializable {
             this.notebookCreatedTime = noteBook.getNotebookCreatedTime();
             this.notebookContent = noteBook.getNotebookTitle();
             this.notebookDescription = noteBook.getNotebookDescription();
+            this.username=noteBook.getUsername();
         }
     }
 }

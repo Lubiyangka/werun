@@ -62,66 +62,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b938686650f0fa0d301ee2255731a31c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "file.status.colors",
+    "spring.configuration.checksum": "297a088204cb9a6b58ce1aa27e292c03",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;repository&quot;,
-      &quot;directory&quot;,
-      &quot;module&quot;
+    "GitStage.ChangesTree.GroupingKeys": [
+      "repository",
+      "directory",
+      "module"
     ]
   }
-}</component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testLogin">
-    <configuration name="NotebookServiceTest.testModifyStateAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.werun.tofront" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration name="DemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="PATTERN" value="com.weun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
-      <option name="METHOD_NAME" value="testModifyStateAll" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.weun" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.DemoApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotebookServiceTest.testShowNotebook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="PATTERN" value="com.weun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
-      <option name="METHOD_NAME" value="testShowNotebook" />
+      <option name="PACKAGE_NAME" value="com.weun" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.DemoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,6 +200,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoFirstApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo_first" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.werun.demo_first.DemoFirstApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NoteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ourfirstproject" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hope.NoteApplication" />
@@ -203,13 +214,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ToFrontApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="toFront" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.werun.tofront.ToFrontApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.DemoApplicationTests" />
         <item itemvalue="JUnit.UserServiceTest.testLogin" />
         <item itemvalue="JUnit.UserServiceTest.testRegister" />
         <item itemvalue="JUnit.UserServiceTest.testLogout" />
-        <item itemvalue="JUnit.NotebookServiceTest.testShowNotebook" />
-        <item itemvalue="JUnit.NotebookServiceTest.testModifyStateAll" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +269,17 @@
       <workItem from="1681399797140" duration="402000" />
       <workItem from="1681446296488" duration="5000" />
       <workItem from="1681463395637" duration="863000" />
-      <workItem from="1681469423385" duration="9252000" />
+      <workItem from="1681469423385" duration="9564000" />
+      <workItem from="1681483273445" duration="790000" />
+      <workItem from="1681548824599" duration="13155000" />
+      <workItem from="1681572997531" duration="530000" />
+      <workItem from="1681612608835" duration="3174000" />
+      <workItem from="1681617386838" duration="2616000" />
+      <workItem from="1681620292128" duration="8538000" />
+      <workItem from="1681633078219" duration="1857000" />
+      <workItem from="1681635017963" duration="55000" />
+      <workItem from="1681635150552" duration="759000" />
+      <workItem from="1681639740660" duration="117000" />
     </task>
     <servers />
   </component>
@@ -287,5 +315,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.shiro.UnavailableSecurityManagerException" package="org.apache.shiro" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

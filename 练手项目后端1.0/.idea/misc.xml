@@ -5,8 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/ourfirstproject/pom.xml" />
+        <option value="$PROJECT_DIR$/demo_first/pom.xml" />
+        <option value="$PROJECT_DIR$/toFront/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="19" project-jdk-type="JavaSDK" />
 </project>

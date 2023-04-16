@@ -1,12 +1,17 @@
 package com.weun.controller;
 
 import com.weun.entity.NoteBook;
+import com.weun.entity.NotebookType;
+import com.weun.entity.User;
 import com.weun.service.INotebookService;
 import com.weun.util.R;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Scanner;
 
 /*
  *1.前端
@@ -24,7 +29,12 @@ public class NotebookController {
      */
     @PostMapping("/saveType/{notebookType}")
     public R saveNotebookType(@PathVariable String notebookType){
-        return new R(iNotebookService.saveType(notebookType));
+        Subject subject= SecurityUtils.getSubject();
+        System.out.println(subject);
+        User user=(User) subject.getPrincipal();
+        System.out.println(user);
+        return new R(iNotebookService.saveType(notebookType,user.getUserId()));
+        //user.getUserId()
     }
     /*
      *1.2.1.2
@@ -32,7 +42,9 @@ public class NotebookController {
      */
     @GetMapping("/showType")
     public R showNotebookType(){
-        return new R(true,iNotebookService.showType());
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(true,iNotebookService.showType("Fu yang"));
     }
     /*
      *1.2.2
@@ -40,6 +52,9 @@ public class NotebookController {
      */
     @PostMapping("/saveNotebook")
     public R saveNotebook (@RequestBody NoteBook noteBook){
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        noteBook.setUsername("Fu yang");
         return new R(iNotebookService.save(noteBook));
     }
     /*
@@ -48,7 +63,9 @@ public class NotebookController {
      */
     @DeleteMapping("/delete/{notebookTitle}")
     public R delete(@PathVariable String notebookTitle){
-        return new R(iNotebookService.removeById(notebookTitle));
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(iNotebookService.removeById(notebookTitle,"Fu yang"));
     }
     /*
      *1.2.3.1
@@ -56,23 +73,30 @@ public class NotebookController {
      */
     @DeleteMapping("/deleteAll")
     public R deleteAll(@RequestParam(value = "notebookTitle") List<String> notebookTitle){
-        return new R(iNotebookService.removeByIds(notebookTitle));
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(iNotebookService.removeByIds(notebookTitle,"Fu yang"));
     }
     /*
      *1.2.4.1
      * 修改笔记状态
      */
     @PutMapping("/modifyState/{notebookTitle}/{state}")
-    public R modifyState(@PathVariable String notebookTitle,@PathVariable Integer state){
-        return new R(iNotebookService.modifyState(notebookTitle,state));
+    public R modifyState(@PathVariable String notebookTitle
+                        ,@PathVariable(value = "state",required = false) Integer state){
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(iNotebookService.modifyState(notebookTitle,state,"Fu yang"));
     }
     /*
      *1.2.4.2
      * 批量修改笔记状态
      */
-    @PutMapping("/modifyState/{state}")
-    public R modifyState(@RequestParam(value = "id") List<String> notebookTitle,@PathVariable Integer state){
-        return new R(iNotebookService.modifyState(notebookTitle,state));
+    @PutMapping("/modifyStateAll/{state}")
+    public R modifyStateBatch(@RequestParam(value = "id") List<String> notebookTitle,@PathVariable Integer state){
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(iNotebookService.modifyState(notebookTitle,state,"Fu yang"));
     }
     /*
      *1.2.4.3
@@ -80,7 +104,9 @@ public class NotebookController {
      */
     @PutMapping("/modifyAll/{notebookTitle}")
     public R modifyAll(@PathVariable String notebookTitle,@RequestBody NoteBook noteBook){
-        return new R(iNotebookService.modifyAll(notebookTitle,noteBook));
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(iNotebookService.modifyAll(notebookTitle,noteBook,"Fu yang"));
     }
     /*
      *1.2.5
@@ -88,7 +114,9 @@ public class NotebookController {
      */
     @GetMapping("/page/{currentPage}/{pageSize}")
     public R getPage(@PathVariable Integer currentPage,@PathVariable Integer pageSize){
-        return new R(true,iNotebookService.getPage(currentPage,pageSize));
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(true,iNotebookService.getPage(currentPage,pageSize,"Fu yang"));
     }
     /*
      *1.2.6
@@ -96,7 +124,9 @@ public class NotebookController {
      */
     @GetMapping("/getNotebookByTitle/{notebookTitle}")
     public R getNotebookByTitle(@PathVariable String notebookTitle){
-        return new R(true,iNotebookService.selectByTitle(notebookTitle));
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(true,iNotebookService.selectByTitle(notebookTitle,"Fu yang"));
     }
     /*
      *1.2.6
@@ -104,7 +134,9 @@ public class NotebookController {
      */
     @GetMapping("/getNotebook/{notebookTitle}")
     public R getNotebook(@PathVariable String notebookTitle){
-        return new R(true,iNotebookService.showNotebook(notebookTitle));
+        Subject subject= SecurityUtils.getSubject();
+        User user=(User) subject.getPrincipal();
+        return new R(true,iNotebookService.showNotebook(notebookTitle,"Fu yang"));
     }
 
 }

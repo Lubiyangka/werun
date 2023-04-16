@@ -7,9 +7,7 @@ import com.weun.entity.User;
 import com.weun.service.IUserService;
 import com.weun.util.R;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.UnknownAccountException;
-import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +20,7 @@ public class UserServiceImpl extends ServiceImpl<UserDao,User> implements IUserS
     @Override
     public User selectByUser(String userId) {
         QueryWrapper<User> queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("uesr_id",userId);
+        queryWrapper.eq("user_id",userId);
         return userDao.selectOne(queryWrapper);
     }
     @Override
@@ -44,9 +42,10 @@ public class UserServiceImpl extends ServiceImpl<UserDao,User> implements IUserS
     }
     public R login(User user){
         Subject subject=SecurityUtils.getSubject();
-        UsernamePasswordToken usernamePasswordToken=new UsernamePasswordToken(user.getUserId(),user.getUserPassword());
+        System.out.println(subject);
+        UsernamePasswordToken token=new UsernamePasswordToken(user.getUserId(),user.getUserPassword());
         try{
-            subject.login(usernamePasswordToken);
+            subject.login(token);
             return new R(true);
         }
         catch (UnknownAccountException unknownAccountException){

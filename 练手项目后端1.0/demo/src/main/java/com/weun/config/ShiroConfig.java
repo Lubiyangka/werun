@@ -1,6 +1,7 @@
 package com.weun.config;
 
 import com.weun.util.MyRealm;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,24 +15,25 @@ import java.util.Map;
 public class ShiroConfig {
     @Bean
     public ShiroFilterFactoryBean shiroFilterFactoryBean(@Qualifier("manager") DefaultWebSecurityManager manager){
-        ShiroFilterFactoryBean factoryBean = new ShiroFilterFactoryBean();
-        factoryBean.setSecurityManager(manager);
+        ShiroFilterFactoryBean bean = new ShiroFilterFactoryBean();
+        bean.setSecurityManager(manager);
+        //SecurityUtils.setSecurityManager(manager);
         Map<String,String> map = new HashMap<>();
 
         //这里应添加所有需拦截页面
-        map.put("/home","authc");
+        map.put("/notebooks/**","authc");
 
         //放行页面
-        map.put("/register","anon");
-        map.put("/login", "anon");
-        factoryBean.setFilterChainDefinitionMap(map);
+        map.put("/users/register/*","anon");
+        map.put("/users/login", "anon");
+        bean.setFilterChainDefinitionMap(map);
 
         //设置未登录的重定向url
-        factoryBean.setLoginUrl("/toLogin");
+        bean.setLoginUrl("/users/toLogin");
 
-        //设置登陆后无权限访问后重定向的页面，这个项目用不到
-        factoryBean.setUnauthorizedUrl("/unauth");
-        return factoryBean;
+//        //设置登陆后无权限访问后重定向的页面，这个项目用不到
+//        bean.setUnauthorizedUrl("/unauth");
+        return bean;
     }
 
 
