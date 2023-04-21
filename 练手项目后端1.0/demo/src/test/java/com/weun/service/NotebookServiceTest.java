@@ -13,8 +13,8 @@ import java.util.List;
 
 @SpringBootTest
 public class NotebookServiceTest {
-//    @Autowired
-//    private INotebookService iNotebookService;
+    @Autowired
+    private INotebookService iNotebookService;
 //    @Test
 //    void testSaveNotebookType(){
 ////        iNotebookService.saveType("C","HLQ");
@@ -79,10 +79,10 @@ public class NotebookServiceTest {
 //        System.out.println (noteBookIpage.getPages());
 //        System.out.println (noteBookIpage.getRecords());
 //    }
-//    @Test
-//    void testSelectByTitle(){
-//        iNotebookService.selectByTitle("title0","HLQ");
-//    }
+    @Test
+    void testSelectByTitle(){
+        iNotebookService.selectByTitle("title0","HLQ");
+    }
 //    @Test
 //    void testShowNotebook(){
 //        iNotebookService.showNotebook("Java程序设计","HLQ");

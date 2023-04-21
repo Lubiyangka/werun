@@ -30,7 +30,7 @@ public class ShiroConfig {
 
         //这里应添加所有需拦截页面
         map.put("/notebooks/**","authc");
-        map.put("/users/logout","logout");
+        //map.put("/users/logout","logout");
         //放行页面
 //        map.put("/users/register/*","anon");
 //        map.put("/users/login", "anon");

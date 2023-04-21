@@ -1,0 +1,22 @@
+##??
+#server:
+#  port: 81
+#spring-sql
+spring:
+  datasource:
+    #配置数据库信息-->MySql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #连数据库
+    url: jdbc:mysql://localhost:3306/ssm_db
+    #本项目不能添加?serverTimezone=UTC
+    username: root
+    password: "031214"
+    #配置数据源信息-->Druid
+    type: com.alibaba.druid.pool.DruidDataSource
+#mp
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
