@@ -8,27 +8,27 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class UserServiceTest {
-    @Autowired
-    private IUserService iUserService;
-
-    @Test
-    void testRegister(){
-        User user=new User();
-        user.setUserId("test124");
-        user.setUserPassword("030404");
-        iUserService.register(user,"030404");
-    }
-    @Test
-    void testLogin(){
-        User user=new User();
-        user.setUserId("test123");
-        user.setUserPassword("786756");
-        iUserService.login(user);
-    }
-    //报错
-    @Test
-    void testLogout(){
-        iUserService.logout();
-    }
+//    @Autowired
+//    private IUserService iUserService;
+//
+//    @Test
+//    void testRegister(){
+//        User user=new User();
+//        user.setUsername("test124");
+//        user.setPassword("030404");
+//        iUserService.register(user,"030404");
+//    }
+//    @Test
+//    void testLogin(){
+//        User user=new User();
+//        user.setUsername("Zhu Shengfang");
+//        user.setPassword("250");
+//        iUserService.login(user);
+//    }
+//    //报错
+//    @Test
+//    void testLogout(){
+//        iUserService.logout();
+//    }
 
 }

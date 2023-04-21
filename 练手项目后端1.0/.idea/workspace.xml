@@ -29,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/demo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -62,44 +62,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "file.status.colors",
-    "spring.configuration.checksum": "297a088204cb9a6b58ce1aa27e292c03",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo/OneDrive/桌面/Local Repository/Laboratory/练手项目后端1.0/demo_werun/src/main/java/com/werun/demo_werun&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;946fc2b777ec0d6e1c99025d28524b4c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "GitStage.ChangesTree.GroupingKeys": [
-      "repository",
-      "directory",
-      "module"
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;repository&quot;,
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\OneDrive\桌面\Local Repository\Laboratory\练手项目后端1.0\demo_werun\src\main\java\com\werun\demo_werun" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\OneDrive\桌面\Local Repository\Laboratory\练手项目后端1.0\demo_werun\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.werun.tofront" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+  <component name="RunManager" selected="Spring Boot.DemoWerunApplication">
     <configuration name="DemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -126,6 +133,22 @@
       <option name="PACKAGE_NAME" value="com.weun" />
       <option name="MAIN_CLASS_NAME" value="com.weun.DemoApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotebookServiceTest.testShowNotebookType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testShowNotebookType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,22 +186,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weun.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.weun.service" />
-      <option name="MAIN_CLASS_NAME" value="com.weun.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testRegister" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.weun.DemoApplication" />
@@ -207,9 +214,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="DemoWerunApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo_werun" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.werun.demo_werun.DemoWerunApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ourfirstproject" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hope.NoteApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.werun.NoteApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="toFront" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.werun.NoteApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,10 +245,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.DemoApplicationTests" />
-        <item itemvalue="JUnit.UserServiceTest.testLogin" />
-        <item itemvalue="JUnit.UserServiceTest.testRegister" />
+        <item itemvalue="JUnit.NotebookServiceTest.testShowNotebookType" />
         <item itemvalue="JUnit.UserServiceTest.testLogout" />
+        <item itemvalue="JUnit.UserServiceTest.testLogin" />
+        <item itemvalue="JUnit.DemoApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -280,6 +301,17 @@
       <workItem from="1681635017963" duration="55000" />
       <workItem from="1681635150552" duration="759000" />
       <workItem from="1681639740660" duration="117000" />
+      <workItem from="1681639930141" duration="147000" />
+      <workItem from="1681640086492" duration="251000" />
+      <workItem from="1681640349082" duration="89000" />
+      <workItem from="1681642561353" duration="2559000" />
+      <workItem from="1681645772134" duration="449000" />
+      <workItem from="1681790770993" duration="8318000" />
+      <workItem from="1681819363889" duration="10685000" />
+      <workItem from="1681900255406" duration="2618000" />
+      <workItem from="1681906204183" duration="1109000" />
+      <workItem from="1681907378362" duration="1699000" />
+      <workItem from="1682066939112" duration="896000" />
     </task>
     <servers />
   </component>
@@ -297,7 +329,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/1.0X" />
+                        <option value="1.0X" />
                       </list>
                     </value>
                   </entry>
