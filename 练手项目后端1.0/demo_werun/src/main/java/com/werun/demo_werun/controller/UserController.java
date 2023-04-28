@@ -26,12 +26,6 @@ public class UserController {
     public R register(@RequestBody User user,@PathVariable String rePassword){
         return iUserService.register(user,rePassword);
     }
-//    @PostMapping("/register/{rePassword}")
-//    public R register(@RequestBody Map<User,String> map){
-//        map.get("userId");
-//        return iUserService.register(user,rePassword);
-//    }
-
     //1.1.3.退出登录
     @PostMapping("/logout")
     public R logout(){

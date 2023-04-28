@@ -28,9 +28,9 @@ public class UserController {
         return iUserService.login(user);
     }
     //1.1.2.注册
-    @PostMapping("/register/{rePassword}")
-    public R register(@RequestBody User user,@PathVariable String rePassword){
-        return iUserService.register(user,rePassword);
+    @PostMapping("/register")
+    public R register(@RequestBody User user){
+        return iUserService.register(user);
     }
 //    @PostMapping("/register/{rePassword}")
 //    public R register(@RequestBody Map<User,String> map){
@@ -46,9 +46,5 @@ public class UserController {
     /*
      *前端对接
      */
-    @GetMapping("/toLogin")
-    public String toLogin(){
-        return "login";
-    }
 
 }

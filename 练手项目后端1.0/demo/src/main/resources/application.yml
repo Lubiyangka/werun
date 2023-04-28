@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://localhost:3306/ssm_db
     #本项目不能添加?serverTimezone=UTC
     username: root
-    password: "031214"
+    password: root
     #配置数据源信息-->Druid
     type: com.alibaba.druid.pool.DruidDataSource
 #mp

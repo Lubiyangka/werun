@@ -24,11 +24,16 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
 
     @Autowired
     private NoteBookDao noteBookDao;
-    @Autowired
-    private NotebookTypeDao notebookTypeDao;
+//    @Autowired
+//    private NotebookTypeDao notebookTypeDao;
 
 
-
+//    @Override
+//    public Boolean removeByType(String notebookType, String username) {
+//        QueryWrapper<NotebookType> queryWrapper=new QueryWrapper<>();
+//        queryWrapper.eq(true,"notebook_type",notebookType).eq("username",username);
+//        return notebookTypeDao.delete(queryWrapper)>0;
+//    }
 
     @Override
     public Boolean removeById(String notebookTitle, String username) {
@@ -79,25 +84,25 @@ public class NotebookServiceImpl extends ServiceImpl<NoteBookDao, NoteBook> impl
 
     }
 
-    @Override
-    public Boolean saveType(String notebookType,String username) {
-        NotebookType oneType=new NotebookType(notebookType,username);
-        return notebookTypeDao.insert(oneType)>0;
-    }
+//    @Override
+//    public Boolean saveType(String notebookType,String username) {
+//        NotebookType oneType=new NotebookType(notebookType,username);
+//        return notebookTypeDao.insert(oneType)>0;
+//    }
 
     @Override
-    public List<NoteBook> selectByTitle(String notebookTitle,String username) {
+    public IPage<NoteBook> selectByTitle(int currentPage, int pageSize,String notebookTitle,String username) {
         QueryWrapper<NoteBook> queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("username",username).eq("notebook_title",notebookTitle);
-        return noteBookDao.selectList(queryWrapper);
+        queryWrapper.eq("username",username).like("notebook_title",notebookTitle);
+        return noteBookDao.selectPage(new Page(currentPage,pageSize),queryWrapper);
     }
 
-    @Override
-    public List<String> showType(String username) {
-        QueryWrapper<NotebookType> queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("username",username);
-        return notebookTypeDao.selectAllByNotebookTypeStrings(username);
-    }
+//    @Override
+//    public List<String> showType(String username) {
+//        QueryWrapper<NotebookType> queryWrapper=new QueryWrapper<>();
+//        queryWrapper.eq("username",username);
+//        return notebookTypeDao.selectAllByNotebookTypeStrings(username);
+//    }
 
     @Override
     public IPage<NoteBook> getPage(int currentPage, int pageSize,String username) {

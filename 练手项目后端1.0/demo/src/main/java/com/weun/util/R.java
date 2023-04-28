@@ -12,6 +12,7 @@ public class R {
     private Object data;
     private String msg;
 
+
     public R() {
     }
 

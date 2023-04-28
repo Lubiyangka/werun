@@ -6,7 +6,7 @@ import com.weun.util.R;
 
 public interface IUserService extends IService<User> {
     User selectByUser(String username);
-    R register(User user, String rePassword);
+    R register(User user);
     R login(User user);
     Boolean logout();
 }

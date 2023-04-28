@@ -13,11 +13,13 @@ import java.util.List;
 
 @SpringBootTest
 public class NotebookServiceTest {
-    @Autowired
-    private INotebookService iNotebookService;
+//    @Autowired
+//    private INotebookService iNotebookService;
+//    @Autowired
+//    private INotebookTypeService iNotebookTypeService;
 //    @Test
 //    void testSaveNotebookType(){
-////        iNotebookService.saveType("C","HLQ");
+//        iNotebookTypeService.saveType("A","HLQ");
 //    }
 //    @Test
 //    void testShowNotebookType(){
@@ -26,7 +28,7 @@ public class NotebookServiceTest {
 //    @Test
 //    void testSaveNotebook(){
 //        NoteBook noteBook=new NoteBook();
-//        noteBook.setNotebookType("C");
+//        noteBook.setNotebookType("C p");
 //        noteBook.setNotebookTitle("C prime plus");
 //        noteBook.setNotebookState(1);
 //        noteBook.setNotebookContent("content test 0");
@@ -79,12 +81,16 @@ public class NotebookServiceTest {
 //        System.out.println (noteBookIpage.getPages());
 //        System.out.println (noteBookIpage.getRecords());
 //    }
-    @Test
-    void testSelectByTitle(){
-        iNotebookService.selectByTitle("title0","HLQ");
-    }
 //    @Test
-//    void testShowNotebook(){
-//        iNotebookService.showNotebook("Java程序设计","HLQ");
+//    void testSelectByTitle(){
+//        iNotebookService.selectByTitle("title0","HLQ");
+//    }
+////    @Test
+////    void testShowNotebook(){
+////        iNotebookService.showNotebook("Java程序设计","HLQ");
+////    }
+//    @Test
+//    void testDeleteType(){
+//        iNotebookService.removeByType("Java","Fu yang");
 //    }
 }

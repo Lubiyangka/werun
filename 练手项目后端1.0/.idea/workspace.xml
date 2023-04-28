@@ -5,15 +5,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="945128e7-6a66-4633-a738-923cc239e0f1" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/../springboot/sing/song_login_student/src/main/java/com/songplatform/song_login_student/daomain/Song.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/sing/song_login_student/src/main/java/com/songplatform/song_login_student/daomain/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/sing/song_login_student/src/main/java/com/songplatform/song_login_student/daomain/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/sing/song_login_student/src/main/java/com/songplatform/song_login_student/daomain/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/demo/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/demo/src/main/java/com/weun/demo/DemoApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/demo/src/main/resources/application.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/demo/src/test/java/com/weun/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_10_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_10_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_23_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/controller/NotebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/controller/NotebookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/INotebookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/INotebookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/impl/NotebookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/impl/NotebookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/util/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/util/MyRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/weun/util/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/weun/util/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/weun/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/weun/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/weun/service/NotebookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/weun/service/NotebookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/weun/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/weun/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/util/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_werun/src/main/java/com/werun/demo_werun/util/MyRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_werun/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo_werun/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_werun/src/test/java/com/werun/demo_werun/DemoWerunApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_werun/src/test/java/com/werun/demo_werun/DemoWerunApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/NoteApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/config/ShiroConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/controller/LoginRegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/controller/NoteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/controller/RedirectController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/dao/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/dao/NoteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/pojo/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/pojo/Note.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/pojo/R.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/pojo/RegisterAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/realm/MyRealm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/service/NoteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/service/impl/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourfirstproject/target/classes/com/hope/service/impl/NoteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ssm_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +119,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="f72afdfe-38fa-471c-b7b6-0f46f732fbbc" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -55,7 +146,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2Nv8KWiAct0KRU9cHf10CEzjMyQ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -72,7 +163,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo/OneDrive/桌面/Local Repository/Laboratory/练手项目后端1.0/demo_werun/src/main/java/com/werun/demo_werun&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo/OneDrive/桌面/Local Repository/Laboratory/练手项目后端1.0/demo/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,7 +171,7 @@
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Subversion.Network&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;946fc2b777ec0d6e1c99025d28524b4c&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -97,31 +188,20 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\OneDrive\桌面\Local Repository\Laboratory\练手项目后端1.0\demo\src\main\resources" />
       <recent name="C:\Users\lenovo\OneDrive\桌面\Local Repository\Laboratory\练手项目后端1.0\demo_werun\src\main\java\com\werun\demo_werun" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo\OneDrive\桌面\Local Repository\Laboratory\练手项目后端1.0\demo_werun\src\main\resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.weun.service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.werun.tofront" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoWerunApplication">
-    <configuration name="DemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weun.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.weun" />
-      <option name="MAIN_CLASS_NAME" value="com.weun.DemoApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DemoApplicationTests.contextLoads">
     <configuration name="DemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -138,7 +218,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotebookServiceTest.testShowNotebookType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotebookServiceTest.testDeleteType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -148,7 +228,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.weun.service" />
       <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
-      <option name="METHOD_NAME" value="testShowNotebookType" />
+      <option name="METHOD_NAME" value="testDeleteType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotebookServiceTest.testSaveNotebookType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weun.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weun.service" />
+      <option name="MAIN_CLASS_NAME" value="com.weun.service.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testSaveNotebookType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -245,10 +341,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.NotebookServiceTest.testShowNotebookType" />
+        <item itemvalue="JUnit.NotebookServiceTest.testSaveNotebookType" />
         <item itemvalue="JUnit.UserServiceTest.testLogout" />
         <item itemvalue="JUnit.UserServiceTest.testLogin" />
-        <item itemvalue="JUnit.DemoApplicationTests" />
+        <item itemvalue="JUnit.NotebookServiceTest.testDeleteType" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +408,38 @@
       <workItem from="1681906204183" duration="1109000" />
       <workItem from="1681907378362" duration="1699000" />
       <workItem from="1682066939112" duration="896000" />
+      <workItem from="1682067885770" duration="10226000" />
+      <workItem from="1682084956539" duration="391000" />
+      <workItem from="1682136993310" duration="1149000" />
+      <workItem from="1682149516876" duration="6691000" />
+      <workItem from="1682172125277" duration="9611000" />
+      <workItem from="1682211064875" duration="6704000" />
+      <workItem from="1682219683893" duration="24361000" />
+      <workItem from="1682265587239" duration="441000" />
+      <workItem from="1682332371441" duration="766000" />
+      <workItem from="1682333825141" duration="2729000" />
+      <workItem from="1682337890475" duration="707000" />
+      <workItem from="1682344881935" duration="1020000" />
+      <workItem from="1682347796035" duration="4313000" />
+      <workItem from="1682397946779" duration="1113000" />
+      <workItem from="1682483085691" duration="31000" />
+      <workItem from="1682483736227" duration="621000" />
+      <workItem from="1682484956525" duration="523000" />
+      <workItem from="1682503698648" duration="525000" />
+      <workItem from="1682504289365" duration="395000" />
+      <workItem from="1682519868758" duration="27000" />
+      <workItem from="1682603153003" duration="16000" />
+      <workItem from="1682668836697" duration="17000" />
+      <workItem from="1682676191013" duration="8000" />
     </task>
+    <task id="LOCAL-00001" summary="上服务器的版本">
+      <created>1682085077781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682085077781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +474,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/demo" />
+    </ignored-roots>
+    <MESSAGE value="上服务器的版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="上服务器的版本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

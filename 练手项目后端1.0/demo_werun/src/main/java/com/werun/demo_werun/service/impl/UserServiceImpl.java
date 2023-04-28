@@ -45,24 +45,26 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUser
     }
     public R login(User user){
         Subject subject=SecurityUtils.getSubject();
-        System.out.println(subject);
         UsernamePasswordToken token=new UsernamePasswordToken(user.getUsername(),user.getPassword());
-//        System.out.println(token);
-//        System.out.println(user);
-        //String userToken=(String) token.getPrincipal();
         try{
             subject.login(token);
             return new R(true);
         }
         catch (UnknownAccountException unknownAccountException){
-            System.out.println(subject);
             return new R(false,"账户不存在");
         }
         catch (IncorrectCredentialsException incorrectCredentialsException){
-            System.out.println(subject);
             return new R(false,"密码错误");
         }
-        //return  new R();
+//        QueryWrapper<User> queryWrapper=new QueryWrapper<>();
+//        queryWrapper.eq("username",user.getUsername());
+//        User one=super.getOne(queryWrapper);
+//        if (one.getPassword().equals(user.getPassword())){
+//            return new R(true,"login!");
+//        }
+//        else{
+//            return new R(false,"shibai");
+//        }
     }
 
     @Override
